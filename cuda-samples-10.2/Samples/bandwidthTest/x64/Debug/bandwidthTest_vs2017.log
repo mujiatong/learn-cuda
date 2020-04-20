@@ -1,0 +1,27 @@
+﻿  Compiling CUDA source file bandwidthTest.cu...
+  
+  C:\Users\Alex-Think\Downloads\cuda-samples-10.2\Samples\bandwidthTest>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" -gencode=arch=compute_37,code=\"sm_37,compute_37\" -gencode=arch=compute_50,code=\"sm_50,compute_50\" -gencode=arch=compute_52,code=\"sm_52,compute_52\" -gencode=arch=compute_60,code=\"sm_60,compute_60\" -gencode=arch=compute_61,code=\"sm_61,compute_61\" -gencode=arch=compute_70,code=\"sm_70,compute_70\" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -I./ -I../../Common -I./ -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\/include" -I../../Common -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static -Xcompiler "/wd 4819" -g   -DWIN32 -DWIN32 -D_MBCS -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64/Debug/vc141.pdb /FS /Zi /RTC1 /MTd " -o x64/Debug/bandwidthTest.cu.obj "C:\Users\Alex-Think\Downloads\cuda-samples-10.2\Samples\bandwidthTest\bandwidthTest.cu" 
+  bandwidthTest.cu
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(160): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(161): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(164): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(396): warning C4244: “参数”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(420): warning C4244: “参数”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(489): warning C4244: “初始化”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(517): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(519): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(521): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(523): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(525): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(527): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(529): warning C4244: “+=”: 从“double”转换到“unsigned int”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(656): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(657): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(711): warning C4244: “参数”: 从“double”转换到“size_t”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(712): warning C4244: “参数”: 从“double”转换到“size_t”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(764): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(765): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(846): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:/Users/Alex-Think/Downloads/cuda-samples-10.2/Samples/bandwidthTest/bandwidthTest.cu(847): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+    正在创建库 ../../bin/win64/Debug/bandwidthTest.lib 和对象 ../../bin/win64/Debug/bandwidthTest.exp
+  bandwidthTest_vs2017.vcxproj -> C:\Users\Alex-Think\Downloads\cuda-samples-10.2\Samples\bandwidthTest\../../bin/win64/Debug/bandwidthTest.exe
