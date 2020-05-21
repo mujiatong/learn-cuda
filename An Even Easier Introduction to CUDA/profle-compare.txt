@@ -1,0 +1,89 @@
+C:\tools
+λ nvprof add_cuda2.exe
+==26364== NVPROF is profiling process 26364, command: add_cuda2.exe
+Max error: 0
+==26364== Profiling application: add_cuda2.exe
+==26364== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  132.16us         1  132.16us  132.16us  132.16us  add(int, float*, float*)
+      API calls:   73.82%  213.29ms         2  106.64ms  3.7667ms  209.52ms  cudaMallocManaged
+                   20.49%  59.201ms         1  59.201ms  59.201ms  59.201ms  cuDevicePrimaryCtxRelease
+                    4.58%  13.240ms         1  13.240ms  13.240ms  13.240ms  cudaLaunchKernel
+                    0.85%  2.4430ms         2  1.2215ms  784.90us  1.6581ms  cudaFree
+                    0.10%  291.00us         1  291.00us  291.00us  291.00us  cudaDeviceSynchronize
+                    0.09%  261.40us        97  2.6940us     100ns  114.00us  cuDeviceGetAttribute
+                    0.06%  160.90us         1  160.90us  160.90us  160.90us  cuModuleUnload
+                    0.01%  24.900us         1  24.900us  24.900us  24.900us  cuDeviceTotalMem
+                    0.00%  10.800us         1  10.800us  10.800us  10.800us  cuDeviceGetPCIBusId
+                    0.00%  2.8000us         3     933ns     300ns  1.9000us  cuDeviceGetCount
+                    0.00%  1.7000us         2     850ns     100ns  1.6000us  cuDeviceGet
+                    0.00%     600ns         1     600ns     600ns     600ns  cuDeviceGetName
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetLuid
+                    0.00%     200ns         1     200ns     200ns     200ns  cuDeviceGetUuid
+
+==26364== Unified Memory profiling result:
+Device "Quadro T1000 (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     258  31.751KB  4.0000KB  32.000KB  8.000000MB  9.129300ms  Host To Device
+     384  32.000KB  32.000KB  32.000KB  12.00000MB  81.82740ms  Device To Host
+
+C:\tools
+λ nvprof add_cuda1.exe
+==29600== NVPROF is profiling process 29600, command: add_cuda1.exe
+Max error: 0
+==29600== Profiling application: add_cuda1.exe
+==29600== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  2.1688ms         1  2.1688ms  2.1688ms  2.1688ms  add(int, float*, float*)
+      API calls:   75.32%  217.13ms         2  108.57ms  968.50us  216.17ms  cudaMallocManaged
+                   18.43%  53.141ms         1  53.141ms  53.141ms  53.141ms  cuDevicePrimaryCtxRelease
+                    4.48%  12.926ms         1  12.926ms  12.926ms  12.926ms  cudaLaunchKernel
+                    0.80%  2.3111ms         2  1.1555ms  710.70us  1.6004ms  cudaFree
+                    0.79%  2.2862ms         1  2.2862ms  2.2862ms  2.2862ms  cudaDeviceSynchronize
+                    0.10%  275.00us        97  2.8350us     100ns  120.80us  cuDeviceGetAttribute
+                    0.05%  140.50us         1  140.50us  140.50us  140.50us  cuModuleUnload
+                    0.01%  32.100us         1  32.100us  32.100us  32.100us  cuDeviceTotalMem
+                    0.01%  14.800us         1  14.800us  14.800us  14.800us  cuDeviceGetPCIBusId
+                    0.00%  3.5000us         2  1.7500us     500ns  3.0000us  cuDeviceGet
+                    0.00%  1.5000us         3     500ns     200ns     700ns  cuDeviceGetCount
+                    0.00%     800ns         1     800ns     800ns     800ns  cuDeviceGetName
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetUuid
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetLuid
+
+==29600== Unified Memory profiling result:
+Device "Quadro T1000 (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     258  31.751KB  4.0000KB  48.000KB  8.000000MB  9.051700ms  Host To Device
+     385  31.916KB  16.000KB  32.000KB  12.00000MB  77.45940ms  Device To Host
+
+C:\tools
+λ nvprof add_cuda.exe
+==12788== NVPROF is profiling process 12788, command: add_cuda.exe
+Max error: 0
+==12788== Profiling application: add_cuda.exe
+==12788== Profiling result:
+            Type  Time(%)      Time     Calls       Avg       Min       Max  Name
+ GPU activities:  100.00%  123.79ms         1  123.79ms  123.79ms  123.79ms  add(int, float*, float*)
+      API calls:   52.53%  214.84ms         2  107.42ms  2.5403ms  212.30ms  cudaMallocManaged
+                   30.30%  123.94ms         1  123.94ms  123.94ms  123.94ms  cudaDeviceSynchronize
+                   13.04%  53.347ms         1  53.347ms  53.347ms  53.347ms  cuDevicePrimaryCtxRelease
+                    3.25%  13.287ms         1  13.287ms  13.287ms  13.287ms  cudaLaunchKernel
+                    0.77%  3.1316ms         2  1.5658ms  805.40us  2.3262ms  cudaFree
+                    0.06%  255.00us        97  2.6280us     100ns  109.50us  cuDeviceGetAttribute
+                    0.04%  160.70us         1  160.70us  160.70us  160.70us  cuModuleUnload
+                    0.01%  21.800us         1  21.800us  21.800us  21.800us  cuDeviceTotalMem
+                    0.00%  10.600us         1  10.600us  10.600us  10.600us  cuDeviceGetPCIBusId
+                    0.00%  1.2000us         2     600ns     200ns  1.0000us  cuDeviceGet
+                    0.00%  1.1000us         3     366ns     200ns     500ns  cuDeviceGetCount
+                    0.00%     700ns         1     700ns     700ns     700ns  cuDeviceGetName
+                    0.00%     300ns         1     300ns     300ns     300ns  cuDeviceGetLuid
+                    0.00%     200ns         1     200ns     200ns     200ns  cuDeviceGetUuid
+
+==12788== Unified Memory profiling result:
+Device "Quadro T1000 (0)"
+   Count  Avg Size  Min Size  Max Size  Total Size  Total Time  Name
+     258  31.751KB  4.0000KB  32.000KB  8.000000MB  9.132400ms  Host To Device
+     384  32.000KB  32.000KB  32.000KB  12.00000MB  78.50020ms  Device To Host
+
+C:\tools
+λ
